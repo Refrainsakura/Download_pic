@@ -9,7 +9,7 @@ import threading
 thread_lock = threading.BoundedSemaphore(value=10)
 
 
-class MainWindow(basewin.Download):
+class MainWindow(basewin.Download):#创建主窗口
     def __init__(self, parent):
         basewin.Download.__init__(self, parent)
 
