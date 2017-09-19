@@ -29,7 +29,7 @@ class MainWindow(basewin.Download):#创建主窗口
             with open(string, 'wb') as f:
                 f.write(pic.content)
             i += 1
-            self.gauge_info.SetValue(i * 2)
+            self.gauge_info.SetValue(i * 2)#进度条
             if i >= 50:
                 self.text_info.SetValue('下载完成')
                 break
